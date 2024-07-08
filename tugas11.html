@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Examples</title>
+    <link rel="stylesheet" href="tugas11.css">
+</head>
+<body>
+
+<!-- Form 1: Basic Name Input -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Nama Anda:</h2>
+    <input type="text" name="nama"><br>
+    <input type="submit" name="InputNama">
+</form>
+
+<!-- Form 2: Multiple Friend Names Input -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Daftar Teman-teman Saya Belajar PHP:</h2>
+    1. <input type="text" name="nama1"><br>
+    2. <input type="text" name="nama2"><br>
+    3. <input type="text" name="nama3"><br>
+    4. <input type="text" name="nama4"><br>
+    <input type="submit" name="InputTeman" value="Submit"/>
+</form>
+
+<!-- Form 3: Login Form -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Silakan Login:</h2>
+    Username: <input type="text" name="username"/><br />
+    Password: <input type="password" name="password"/><br />
+    <input type="submit" name="Login" value="Login"/>
+    <input type="reset" name="reset" value="Reset"/>
+</form>
+
+<!-- Form 4: Program Studi Selection -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Pilih Program Studi:</h2>
+    <input type="radio" name="prodi" value="TIF" checked/> Teknik Informatika <br />
+    <input type="radio" name="prodi" value="TI"/> Teknik Industri <br />
+    <input type="radio" name="prodi" value="TE"/> Teknik Elektro <br />
+    <input type="radio" name="prodi" value="TK"/> Teknik Kimia <br />
+    <input type="radio" name="prodi" value="TP"/> Teknologi Pangan <br />
+    <input type="submit" name="PilihProdi" value="Pilih"/>
+    <input type="reset" name="reset" value="Reset"/>
+    
+</form>
+
+<!-- Form 5: Grup Band Favorit -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Pilih Grup Band yang Menjadi Favorit Kamu:</h2>
+    <input type="checkbox" name="band[]" value="The Beatles" checked> The Beatles <br>
+    <input type="checkbox" name="band[]" value="Queen"> Queen <br>
+    <input type="checkbox" name="band[]" value="Coldplay"> Coldplay<br>
+    <input type="checkbox" name="band[]" value="Linkin Park"> Linkin Park<br>
+    <input type="submit" name="PilihBand" value="Pilih"/>
+    <input type="reset" name="reset" value="Reset"/>
+</form>
+
+<!-- Form 6: Film Anime Favorit (Combo Box) -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Pilih Film Anime Favorit Saudara:</h2>
+    <select name="anime">
+        <option value="Naruto">Naruto</option>
+        <option value="One Piece">One Piece</option>
+        <option value="Attack on Titan">Attack on Titan</option>
+        <option value="My Hero Academia">My Hero Academia</option>
+        <option value="Demon Slayer">Demon Slayer</option>
+        <option value="Dragon Ball">Dragon Ball</option>
+    </select>
+    <input type="submit" name="PilihAnime" value="Pilih"/>
+</form>
+
+<!-- Form 7: Film Anime Favorit (List Box) -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Pilih Film Anime Favorit Saudara:</h2>
+    <select name="anime" size="4">
+        <option value="Naruto">Naruto</option>
+        <option value="One Piece">One Piece</option>
+        <option value="Attack on Titan">Attack on Titan</option>
+        <option value="My Hero Academia">My Hero Academia</option>
+        <option value="Demon Slayer">Demon Slayer</option>
+        <option value="Dragon Ball">Dragon Ball</option>
+    </select>
+    <input type="submit" name="PilihAnime" value="Pilih"/>
+</form>
+
+<!-- Form 8: Kritik dan Saran -->
+<form action="tugas11.php" method="post" name="input">
+    <h2>Isikan Kritik dan Saran Saudara:</h2>
+    <textarea name="saran" cols="40" rows="5"></textarea><br>
+    <input type="submit" name="ProsesSaran" value="Input Saran"/>
+</form>
+
+</body>
+</html>
+
+
+
